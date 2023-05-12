@@ -1,0 +1,10 @@
+{
+    "name": "gpt4free-ts",
+    "version": 2,
+    "routes": [{
+            "src": "/ask",
+            "headers": { "cache-control": "no-cache, no-store, must-revalidate", "Access-Control-Allow-Origin": "*" },
+            "dest": "/api/ask.ts"
+        }
+    ]
+}
