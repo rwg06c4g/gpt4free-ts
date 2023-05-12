@@ -1,7 +1,7 @@
 //import {ChatModelFactory, Model} from "../model";
-//import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
-//dotenv.config();
+dotenv.config();
 
 
 //const chatModel = new ChatModelFactory();
