@@ -26,8 +26,8 @@ module.exports = async(req, res) => {
         res.end("Model error");
         return;
    }
-	const res = await chat.ask({prompt: prompt as string, options});
+  const resp = await chat.ask({prompt: prompt as string, options});
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/text');
-  res.end(res);
+  res.end(resp);
 };
