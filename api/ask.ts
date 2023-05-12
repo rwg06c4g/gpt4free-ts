@@ -1,5 +1,6 @@
 import {ChatModelFactory, Model} from "../model";
 import dotenv from 'dotenv';
+import { VercelRequest, VercelResponse } from '@vercel/node';
 
 dotenv.config();
 
@@ -11,7 +12,7 @@ interface AskReq {
     //model: Model;
 }
 
-module.exports = async(req, res) => {
+module.exports = async(req:VercelRequest, res:VercelResponse) => {
   const {prompt, ...options} = req.query as unknown as AskReq;
   if (!prompt) {
         res.statusCode = 400;
