@@ -1,10 +1,10 @@
-import {ChatModelFactory, Model} from "../model";
-import dotenv from 'dotenv';
+//import {ChatModelFactory, Model} from "../model";
+//import dotenv from 'dotenv';
 
-dotenv.config();
+//dotenv.config();
 
 
-const chatModel = new ChatModelFactory();
+//const chatModel = new ChatModelFactory();
 
 interface AskReq {
     prompt: string;
@@ -26,8 +26,8 @@ module.exports = async(req, res) => {
         res.end("Model error");
         return;
    }
-  const resp = await chat.ask({prompt: prompt as string, options});
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/text');
-  res.end(resp);
+  //const resp = await chat.ask({prompt: prompt as string, options});
+  //res.statusCode = 200;
+  //res.setHeader('Content-Type', 'application/text');
+  //res.end(resp);
 };
