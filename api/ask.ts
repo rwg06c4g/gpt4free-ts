@@ -1,6 +1,6 @@
 import {ChatModelFactory, Model} from "../model";
 import dotenv from 'dotenv';
-import { VercelRequest, VercelResponse } from '@vercel/node';
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 dotenv.config();
 
