@@ -19,13 +19,13 @@ module.exports = async(req, res) => {
         res.end("Please enter a prompt");
         return;
   }
-  const chat = chatModel.get(model);
-  if (!chat) {
-        res.statusCode = 400;
-        res.setHeader('Content-Type', 'application/text');
-        res.end("Model error");
-        return;
-   }
+ // const chat = chatModel.get(model);
+  //if (!chat) {
+  //      res.statusCode = 400;
+  //      res.setHeader('Content-Type', 'application/text');
+  //      res.end("Model error");
+  //      return;
+   //}
   //const resp = await chat.ask({prompt: prompt as string, options});
   //res.statusCode = 200;
   //res.setHeader('Content-Type', 'application/text');
