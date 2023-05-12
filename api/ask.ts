@@ -8,11 +8,11 @@
 
 interface AskReq {
     prompt: string;
-    model: Model;
+    //model: Model;
 }
 
 module.exports = async(req, res) => {
-  const {prompt, model = Model.Forefront, ...options} = req.query as unknown as AskReq;
+  const {prompt, ...options} = req.query as unknown as AskReq;
   if (!prompt) {
         res.statusCode = 400;
         res.setHeader('Content-Type', 'application/text');
