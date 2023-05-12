@@ -11,7 +11,7 @@ interface AskReq {
     //model: Model;
 }
 
-module.exports = async(req, res) => {
+module.exports = async(req: Request, res: Response) => {
   const {prompt, ...options} = req.query as unknown as AskReq;
   if (!prompt) {
         res.statusCode = 400;
