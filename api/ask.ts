@@ -1,10 +1,10 @@
-//import {ChatModelFactory, Model} from "../model";
+import {ChatModelFactory, Model} from "../model";
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 
-//const chatModel = new ChatModelFactory();
+const chatModel = new ChatModelFactory();
 
 interface AskReq {
     prompt: string;
