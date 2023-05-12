@@ -1,6 +1,3 @@
-import Koa, {Context, Next} from 'koa';
-import Router from 'koa-router'
-import bodyParser from 'koa-bodyparser';
 import {ChatModelFactory, Model} from "../model";
 import dotenv from 'dotenv';
 
