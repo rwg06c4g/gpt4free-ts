@@ -29,6 +29,7 @@
     "https-proxy-agent": "^5.0.1",
     "tls-client": "^0.0.5",
     "user-agents": "^1.0.1367",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "@vercel/node": "^1.11.1"
   }
 }
